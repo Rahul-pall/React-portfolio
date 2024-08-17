@@ -1,0 +1,130 @@
+.works {
+  padding: 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-top: 4rem;
+}
+.w-right {
+  position: relative;
+  transform: scale(1);
+}
+.w-mainCircle {
+  position: relative;
+  left: 9rem;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: white;
+}
+.w-mainCircle > * {
+  position: absolute;
+}
+.w-mainCircle > :nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
+.w-mainCircle > :nth-child(2) {
+  left: -3rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(3) {
+  left: 6rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(4) {
+  left: 15rem;
+  top: 5rem;
+}
+.w-mainCircle > :nth-child(5) {
+  left: 6rem;
+  top: 14rem;
+}
+.w-secCircle {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--smboxShadow);
+  background: white;
+}
+.w-secCircle img {
+  transform: scale(0.6);
+}
+.w-backCircle {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  z-index: -1;
+}
+.blueCircle {
+  background: blue;
+  left: 18rem;
+  top: 0rem;
+}
+.yellowCircle {
+  background: rgb(255, 238, 0);
+  left: 18rem;
+  top: 8rem;
+}
+@media screen and (max-width:480px){
+  .works{
+    padding: 0 0.8rem;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-bottom: 10rem;
+  }
+  .w-right {
+    position: relative;
+    transform: scale(0.5);
+  }
+  .w-mainCircle {
+    left: -5rem;
+  }
+  .blueCircle {
+    left: 4rem;
+    top: 0rem;
+  }
+  .yellowCircle {
+    left: 4rem;
+    top: 8rem;
+  }
+.left-s>:nth-child(1){
+  font-size: 2rem;
+}
+.left-s>:nth-child(2){
+  font-size: 2rem;
+}
+}
+@media (min-width:480px) and (max-width:850px){
+  .works{
+    padding: 0 0.8rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+@media (min-width:850px) and (max-width:1200px){
+
+  .w-right {
+    position: relative;
+    transform: scale(0.8);
+    left: -4rem;
+    top: -1rem;
+  }
+  
+}
+
+@media (min-width:850px) and (max-width:1050px) {
+  .works {
+    height: 40vh;
+    margin-top: 4rem;
+  }
+}

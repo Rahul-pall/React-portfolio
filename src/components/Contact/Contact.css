@@ -1,0 +1,88 @@
+.contact-form{
+  padding: 0.3rem;
+  display: flex;
+  height: 80vh;
+  margin-top: 8rem;
+}
+.awesome{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              margin-left: 2rem;
+}
+.awesome>*{
+ font-size: 2rem;
+}
+.awesome>:nth-child(1){
+              color: var(--black);
+              font-weight: bold;
+}
+.awesome>:nth-child(2){
+              color: var(--orange);
+              font-weight: bold;
+}
+.c-right{
+              display: flex;
+              justify-content: center;
+              position: relative;
+              flex: 1;
+}
+.c-right>form{
+              display: flex;
+              flex-direction: column;
+              gap: 2rem;
+              align-items: center;
+}
+.c-right .user{
+              width: 20rem;
+              height: 2rem;
+              padding: 0.3rem;
+              outline: none;
+              border: 2px solid var(--orange);
+              border-radius: 8px;
+              font-size: 16px;
+}
+textarea{
+              height: 4rem !important;
+}
+form .c-blur1{
+              top: 1rem;
+              left: 20rem;
+              background:var(--purple);
+}
+@media screen and (max-width:480px){
+  .contact-form{
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    gap: 2rem;
+  }
+  .awesome{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+  .c-right .user{
+    width:15rem;
+}
+.c-right{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex:none;
+  width: 100%;
+}
+}
+@media (min-width:480px) and (max-width:850px){
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    gap: 2rem;
+  }
+}

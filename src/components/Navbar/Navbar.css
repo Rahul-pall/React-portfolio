@@ -1,0 +1,177 @@
+.n-wrapper{
+    height: 10vh;      
+    display: flex;
+    justify-content: space-between;
+}
+
+.n-left{
+              flex: 1;
+              align-items: center;
+              display: flex;
+              gap: 2rem;
+}
+
+.n-name{
+              font-size: 1.3rem;
+              font-weight: bold;
+}
+
+.n-right{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+.n-right a{
+  text-decoration: none;
+  color: white;
+}
+
+.n-list{
+              flex: 10;
+}
+.n-list>ul{
+              display: flex;
+              gap: 2rem;
+              margin-right: 4rem;
+}
+.n-list li{
+              list-style: none;
+              position: relative;
+}
+.n-list li:hover{
+              cursor: pointer;
+              color: var(--orange);
+}
+.n-list li::after{
+              content: "";
+              width: 0%;
+              height: 3px;
+              position: absolute;
+              bottom: -6px;
+              left: 0px;
+              background-color: var(--orange);
+              transition: 0.5s all;
+}
+.n-list li:hover::after{
+              /* animation: list 0.5s infinite; */
+              width: 100%;
+}
+
+.n-button{
+  flex: 2;
+}
+.activeClass{
+  color: red;
+}
+@media screen and (max-width:480px) {
+  .n-list .ul{
+    position: fixed;
+    top:-120vh;
+    left:0;
+    background: var(--orange);
+    color: white !important;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-top: 6rem;
+    padding-left: 2rem;
+    transition: all 0.5s;
+    text-align: center;
+  }
+  .cancel{
+    position: absolute;
+    right: 3rem;
+    top: 0rem;
+  }
+  .n-list li{ 
+    font-size: 1.3rem;
+    transition: all 0.5s;
+  }
+  .n-button{
+    display: none;
+  }
+  .n-icons{
+    position: relative;
+    top: 7px;
+  }
+}
+@media (min-width:480px) and (max-width:1050px) {
+  .n-wrapper{
+  position: relative;
+}
+  .n-list{
+    display: block;
+  }
+  .n-list .ul{
+    position: fixed;
+    top:-120vh;
+    left:0;
+    background:var(--orange);
+    color: white !important;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-top: 6rem;
+    transition: all 0.5s;
+    text-align: center;
+  }
+  
+  .cancel{
+    position: absolute;
+    right: 6rem;
+    top: 1rem;
+  }
+  .n-list li{
+    margin: 1rem;
+    font-size: 2rem;
+    position: relative;
+  }
+  .n-button{
+    display: none;
+  }
+  .n-icons{
+    padding: 0px 11px;
+  }
+}
+@media (min-width:1050px) and (max-width:1200px) {
+  .n-button{
+    display: none;
+  }
+  .n-list{
+  flex: 0;
+  position: relative;
+  left: 3rem;
+  }
+  .n-list .ul li .n-icons{
+    display: none;
+ }
+ .cancel{
+  display: none;
+ }
+ #open{
+  display: none;
+ }
+}
+@media (min-width:1200px){
+  .n-list .ul li .n-icons{
+    display: none;
+ }
+ .cancel{
+  display: none;
+ }
+ #open{
+  display: none;
+ }
+}
