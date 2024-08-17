@@ -7,7 +7,7 @@ import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
 import Boy from '../../img/boy.png'
 import Thumbup from '../../img/thumbup.png'
-import Crown from '../../img/Crown.png'
+import Crown from '../../img/crown.png'
 import Glassesimoji from '../../img/Glassesimoji.png'
 import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import { Themecontext } from '../../Context';
