@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Service.css";
 import Resume from './RESUME.pdf'
 import Heartemoji from "../../img/heartemoji.png";
